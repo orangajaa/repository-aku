@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(135deg, #0B1A12, #020403);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
