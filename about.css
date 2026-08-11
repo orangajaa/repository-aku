@@ -4,6 +4,9 @@
     align-items: center;
     justify-content:center;
     text-align: center;
+
+    background-color: #0B1A12;
+
     color: #B4FF00;
     height: 30vh;
     width: 90%;
@@ -25,7 +28,7 @@
 }
 
 html {
-    background-color: #0B1A12;
+    background: linear-gradient(135deg, #0B1A12 0%, #16301f 100%);
 }
 .about {
     display: flex; 
