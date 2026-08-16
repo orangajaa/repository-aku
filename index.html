@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <title>coding</title>
+    <title>website michael</title>
 </head>
 
 <body>
-    <nav class="navbar"> 
-        <ul class="menu">
-            <li><a href="about.html" class="tombol">About me</a></li>
-            <li><a href="#" class="tombol">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <nav>
-        <ul class="Home">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About me</a></li>
-        </ul>
-    </nav>
-    <button class="menu-btn" onclick="toggleMenu()" aria-label="Buka menu">☰</button>
+    <div id="mainWrapper">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#" class="tombol" onclick="openPopup(); return false;">About me</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section class="container">
-            <header>
-                <h1>Halo nama aku Michael</h1>
-                <p>- UI/UX Designer & frontend developer</p>
-            </header>
-        </section>
-    </main>
+        <main>
+            <section class="container">
+                <header>
+
+                    <h1>Halo aku Michael</h1>
+                    <p>singkat nya aku itu programmer sekaligus runner dan cyclist</p>
+                    <p>- UI/UX Designer & frontend developer</p>
+                </header>
+            </section>
+        </main>
+    </div>
+
+    <!-- Popup About, di LUAR mainWrapper biar gak ikut ke-blur -->
+<div class="popup-overlay" id="popupOverlay" onclick="closePopupOnOverlay(event)">
+    <div class="popup-box">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+
+        <h1>About Me</h1>
+        <p>
+            aku michael seseorang yang suka sekali mencari hobby hobby baru,
+            selain yang aku lakukan sekarang yaitu aku suka olahraga dan menggambar,
+            menjadi seorang programmer adalah salah satu hobby yang aku minati,
+            aku suka sekali dengan dunia teknologi dan aku ingin menjadi seorang programmer yang handal,
+            aku juga ingin menjadi artist yang keren.
+        </p>
+        <p>
+            Visi : visi aku adalah menjadi orang yang bukan paham tentang teknologi saja
+            tetapi juga paham tentang seni, aku ingin menjadi seorang programmer yang handal
+            dan juga seorang artist yang ahli.
+        </p>
+
+        <h2>Skills/hobby</h2>
+        <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Menggambar Digital</li>
+            <li>UI/UX Design</li>
+            <li>running</li>
+            <li>cycling</li>
+            <li>DLL</li>
+        </ul>
+
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+            <a href="mailto:azimanmichael3@gmail.com?subject=Halo Michael&body=Saya ingin bertanya">Email</a>
+            <a href="https://instagram.com/orangajareal" target="_blank">Instagram</a>
+        </div>
+    </div>
+</div>
 
     <script src="home.js"></script>
 </body>
